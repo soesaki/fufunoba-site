@@ -1,0 +1,458 @@
+.logo img {
+    height: 100px;
+    /* お好みで */
+    width: auto;
+    display: block;
+}
+
+/* バナー */
+.hero img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* テキスト */
+.content {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.content p {
+    color: #666;
+    font-size: 30px;
+}
+
+/* ヘッダー */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu-close {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    font-size: 70px;
+    cursor: pointer;
+    user-select: none;
+    color: #666;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    background: #fff;
+    padding: 40px 20px;
+    transition: 0.3s ease;
+    z-index: 100;
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+.menu-logo img {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 150px 15px;
+    margin-bottom: 40px;
+
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    z-index: 1000;
+    position: relative;
+    font-size: 70px;
+    right: 30px;
+    user-select: none;
+    color: #666;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    margin: 40px 15px;
+    color: #666;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #666;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu-sns img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 0px 35px;
+
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.container h2 {
+    font-weight: 300;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #333;
+}
+
+.card p {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+}
+
+.card img {
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.card-link {
+    text-decoration: none;
+    /* 下線消す */
+    color: #000000;
+    display: block;
+    /* カード全体をクリック可能に */
+}
+
+.card-link:hover .card {
+    background: #f7f7f7;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 70px auto;
+    padding: 30px 50px;
+    font-size: 30px;
+    border-radius: 100px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #9c9c9c;
+}
+
+
+
+
+/* fufunoba */
+.gallery {
+    max-width: 1800px;
+    margin: 50px auto;
+    padding: 0 50px;
+}
+
+.gallery h1 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.gallery h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #333;
+}
+
+.gallery p {
+    text-align: center;
+    color: #666;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+
+}
+
+.gallery-card {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 画像専用の箱 */
+.gallery-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: 0.3s;
+}
+
+.gallery-card:hover .gallery-image::after {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* 画像 */
+.gallery-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+    transform-origin: center center;
+}
+
+.gallery-image p {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: #666;
+}
+
+/* ホバーで拡大 */
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+/* 文字 */
+.gallery-card p {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: #666;
+}
+
+.gallery-detail img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery-detail h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #666;
+    margin: 50px;
+}
+
+.gallery-detail p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #666;
+}
+
+.back-link {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #666;
+    font-size: 25px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+.instagram {
+    max-width: 1800px;
+    /* 横幅を制限 */
+    margin: 50px auto;
+    /* 中央寄せ */
+    padding: 0 50px;
+    /* スマホ用の余白 */
+}
+
+.instagram h2 {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* 手芸 */
+/* バナー */
+.gallery-banner {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.gallery-banner h2 {
+    font-size: 30px;
+    margin-bottom: 3px;
+    text-align: center;
+    color: #333;
+}
+
+.gallery-banner p {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gallery-banner img {
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    max-width: 800px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin: 80px 0;
+}
+
+.site-footer {
+    background: #fff;
+    margin-top: 40px;
+    padding: 60px 20px 40px;
+    text-align: center;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.site-footer img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #999;
+}
+
+@media (max-width: 600px) {
+
+    .logo img {
+        height: 60px;
+    }
+
+    .menu-toggle {
+        font-size: 40px;
+        right: 10px;
+    }
+
+    .menu-close {
+        font-size: 40px;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu-list li {
+        font-size: 18px;
+        margin: 25px 15px;
+    }
+
+    .content p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+
+    .gallery h1 {
+        font-size: 24px;
+    }
+
+    .gallery-detail h1 {
+        font-size: 24px;
+        margin: 30px 0;
+    }
+
+    .gallery-detail p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+}
