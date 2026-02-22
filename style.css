@@ -1,29 +1,32 @@
+/* =============================
+   基本設定
+============================= */
+
+body {
+    background-color: #f5f5f5;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* =============================
+   ロゴ
+============================= */
+
 .logo img {
-    height: 80px;
+    height: 70px;
     width: auto;
     display: block;
 }
 
-/* バナー */
-.hero img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+/* =============================
+   ヘッダー
+============================= */
 
-/* テキスト */
-.content {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.content p {
-    color: #666;
-    font-size: 24px;
-}
-
-/* ヘッダー */
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -35,33 +38,36 @@
     z-index: 10;
 }
 
-/* ✨ 修正ポイント */
+/* ハンバーガー */
 .menu-toggle {
     cursor: pointer;
     z-index: 1000;
     position: relative;
     font-size: 32px;
-    right: 10px;
-    user-select: none;
     color: #666;
 }
 
+/* 閉じるボタン */
 .menu-close {
     position: absolute;
     top: 30px;
-    right: 25px;
+    right: 30px;
     font-size: 32px;
     cursor: pointer;
     user-select: none;
     color: #666;
 }
+
+/* =============================
+   サイドメニュー
+============================= */
 
 .side-menu {
     position: fixed;
     top: 0;
     right: -100%;
     width: 80%;
-    max-width: 380px;
+    max-width: 350px;
     height: 100vh;
     background: #fff;
     padding: 40px 20px;
@@ -74,10 +80,10 @@
 }
 
 .menu-logo img {
-    max-width: 180px;
+    max-width: 250px;
     height: auto;
     display: block;
-    margin: 60px auto 30px;
+    margin: 100px auto 40px;
 }
 
 .menu-list {
@@ -86,34 +92,38 @@
 }
 
 .menu-list li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     font-size: 20px;
-    margin: 20px 15px;
+    margin: 25px 0;
     color: #666;
 }
 
 .menu-list a {
     text-decoration: none;
     color: #666;
-    display: block;
-    padding: 10px 0;
 }
 
 .menu-sns img {
     width: 40px;
     height: 40px;
-    object-fit: contain;
-    margin: 0 20px;
 }
 
-body {
-    background-color: #f5f5f5;
-    font-family: "Arial", sans-serif;
-    margin: 0;
-    box-sizing: border-box;
+/* =============================
+   コンテンツ
+============================= */
+
+.content {
+    text-align: center;
+    padding: 100px 20px;
 }
+
+.content p {
+    color: #666;
+    font-size: 20px;
+}
+
+/* =============================
+   カード共通
+============================= */
 
 .container {
     max-width: 1000px;
@@ -125,32 +135,214 @@ body {
 
 .container h1 {
     text-align: center;
-    color: #333;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
 }
 
 .card h2 {
     font-size: 20px;
+    text-align: center;
 }
 
 .card p {
     font-size: 16px;
+    text-align: center;
 }
+
+.card img {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.card-link:hover .card {
+    background: #f7f7f7;
+}
+
+/* =============================
+   ボタン
+============================= */
 
 .btn {
     display: block;
     width: fit-content;
     margin: 50px auto;
-    padding: 20px 40px;
-    font-size: 20px;
+    padding: 15px 35px;
+    font-size: 18px;
     border-radius: 100px;
-    background-color: #000000;
+    background-color: #000;
     color: white;
     text-decoration: none;
     text-align: center;
 }
 
 .btn:hover {
-    background-color: #9c9c9c;
+    background-color: #777;
+}
+
+/* =============================
+   ギャラリー
+============================= */
+
+.gallery {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.gallery h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.gallery p {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-card {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery-image {
+    overflow: hidden;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* =============================
+   詳細ページ
+============================= */
+
+.gallery-detail img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery-detail h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0 20px;
+}
+
+.gallery-detail p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.back-link {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* =============================
+   区切り線
+============================= */
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    margin: 60px 0;
+}
+
+/* =============================
+   フッター
+============================= */
+
+.site-footer {
+    background: #fff;
+    margin-top: 40px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.site-footer img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.footer-copy {
+    font-size: 12px;
+    color: #999;
+}
+
+/* =============================
+   スマホ対応
+============================= */
+
+@media (max-width: 600px) {
+
+    .menu-toggle,
+    .menu-close {
+        font-size: 28px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content p,
+    .gallery p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
 }
