@@ -108,9 +108,8 @@ p {
 }
 
 /* =============================
-   コンテンツ
+   バナー
 ============================= */
-
 .hero {
     width: 100%;
     overflow: hidden;
@@ -119,10 +118,14 @@ p {
 .hero img {
     width: 100%;
     height: auto;
-    max-height: 500px;   /* ← 高さ制限 */
-    object-fit: cover;   /* はみ出しトリミング */
+    max-width: 100%;
     display: block;
 }
+
+/* =============================
+   コンテンツ
+============================= */
+
 
 .content {
     text-align: center;
