@@ -111,6 +111,19 @@ p {
    コンテンツ
 ============================= */
 
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;   /* ← 高さ制限 */
+    object-fit: cover;   /* はみ出しトリミング */
+    display: block;
+}
+
 .content {
     text-align: center;
     padding: 100px 20px;
