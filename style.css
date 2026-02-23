@@ -277,6 +277,10 @@ p {
 /* =============================
    詳細ページ
 ============================= */
+.gallery-detail {
+    text-align: center;
+    padding: 120px 20px;
+   }
 
 .gallery-detail img {
     width: 100%;
