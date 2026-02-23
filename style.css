@@ -111,9 +111,9 @@ p {
 }
 
 .menu-sns img {
-    width: 30px;
+    width: 20px;
     height: auto;
-   margin-left: 5px; /* テキストの「-」の書き出し位置に合わせるための微調整 */
+   margin-left: 10px; /* テキストの「-」の書き出し位置に合わせるための微調整 */
     margin-bottom: 10px;
 }
 
