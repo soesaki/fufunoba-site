@@ -339,19 +339,20 @@ p {
    font-weight: 300;
 }
 
-.gallery-banner h2 {
-    font-size: 18px;
+main.gallery .gallery-banner h2 {
+    font-size: 18px !important;    /* !important を付けると最優先されます */
     margin-bottom: 20px;
     text-align: center;
     color: #333;
-   font-weight: 400;
+    font-weight: 400;
 }
 
-.gallery-banner p {
-    font-size: 20px;
-    color: #555;
-    text-align: center;
-    margin-bottom: 50px;
+/* 説明文もついでに小さくしてバランスを取る場合 */
+main.gallery .gallery-banner p {
+    font-size: 14px !important;
+    color: #666;
+    margin-top: 15px;
+    line-height: 1.6;
 }
 
 .gallery-banner img {
