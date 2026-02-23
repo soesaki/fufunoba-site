@@ -321,10 +321,11 @@ p {
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
+   font-weight: 300;
 }
 
 .gallery-banner h2 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 3px;
     text-align: center;
     color: #333;
@@ -361,7 +362,7 @@ p {
 
 .instagram h2 {
     text-align: center;
-    color: #666;
+    color: #333;
     margin-bottom: 30px;
    font-weight: 300;
 }
