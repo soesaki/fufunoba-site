@@ -129,7 +129,7 @@ p {
 
 .content {
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
 }
 
 .content p {
@@ -296,6 +296,7 @@ p {
     text-align: center;
     font-size: 16px;
     margin-bottom: 30px;
+    color: #333;
 }
 
 .back-link {
