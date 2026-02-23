@@ -428,9 +428,21 @@ main.gallery .gallery-banner p {
     }
 
     .gallery-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+       gap: 10px;                     /* 写真同士の隙間を少し狭くするとスッキリします */
+        padding: 0 10px;
     }
 
+   .gallery-image img {
+        border-radius: 4px;            /* 小さくなるので角丸も少し控えめに */
+    }
+
+    /* タイトルなどの調整 */
+    .gallery h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+   
     .content p,
     .gallery p {
         font-size: 16px;
