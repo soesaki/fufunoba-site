@@ -80,16 +80,18 @@ p {
 }
 
 .menu-logo {
-    text-align: left;     /* 中の要素を左に寄せる */
-    padding-left: 0;      /* 余計な余白があれば消す */
+    display: flex;        /* 中身を自由に配置できるようにする */
+    justify-content: flex-start; /* 左端に寄せる */
+    padding-left: 0;      /* 左の余計な隙間をカット */
 }
 
 /* ロゴ画像の設定 */
 .menu-logo img {
-    width: 140px;         /* お好みのサイズ（140〜160px程度） */
+    width: 140px;         /* このサイズ感、良いですね！ */
     height: auto;
-    display: block;       /* ブロック要素にしてmarginを有効にする */
-    margin: 40px 0 20px 20px; /* 上40px, 右0, 下20px, 左20px */
+    display: block;
+    /* marginの auto を完全に消して、数値で指定します */
+    margin: 40px 0 20px 0; 
 }
 
 .menu-list {
