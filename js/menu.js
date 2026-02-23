@@ -10,3 +10,19 @@ toggle.addEventListener("click", (e) => {
 closeBtn.addEventListener("click", () => {
   menu.classList.remove("active");
 });
+
+// 「もっと見る」機能
+const moreBtn = document.getElementById('moreBtn');
+if (moreBtn) {
+    moreBtn.addEventListener('click', function() {
+        // すべての隠れている画像を取得
+        const hiddenImages = document.querySelectorAll('.gallery-image.is-hidden');
+        
+        hiddenImages.forEach(img => {
+            img.style.display = 'block'; // 画像を表示
+        });
+
+        // ボタン自体を消す
+        this.parentElement.style.display = 'none';
+    });
+}
