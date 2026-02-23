@@ -436,9 +436,9 @@ main.gallery .gallery-banner p {
    .gallery-image img {
         border-radius: 4px;            /* 小さくなるので角丸も少し控えめに */
     }
-
-   .gallery-image.is-hidden {
-        display: none; /* スマホの時は隠す */
+   
+   .gallery-grid .gallery-image.is-hidden {
+        display: none !important; 
     }
     /* ボタンの見た目（既存の .btn クラスを活かしつつ微調整） */
     .more-btn-container {
