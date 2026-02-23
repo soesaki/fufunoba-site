@@ -438,7 +438,7 @@ main.gallery .gallery-banner p {
     }
    
    .gallery-grid .gallery-image.is-hidden {
-        display: none !important; 
+        display: none; 
     }
     /* ボタンの見た目（既存の .btn クラスを活かしつつ微調整） */
     .more-btn-container {
