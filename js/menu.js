@@ -12,17 +12,21 @@ closeBtn.addEventListener("click", () => {
 });
 
 // 「もっと見る」機能
+// 手芸ページのmoreボタン機能
 const moreBtn = document.getElementById('moreBtn');
+const moreContainer = document.getElementById('moreContainer');
+
 if (moreBtn) {
     moreBtn.addEventListener('click', function() {
-        // すべての隠れている画像を取得
+        // すべての「is-hidden」クラスがついた要素を取得
         const hiddenImages = document.querySelectorAll('.gallery-image.is-hidden');
         
         hiddenImages.forEach(img => {
-            img.style.display = 'block'; // 画像を表示
+            // クラス名「is-hidden」を削除する（これでCSSの非表示が解けます）
+            img.classList.remove('is-hidden');
         });
 
-        // ボタン自体を消す
-        this.parentElement.style.display = 'none';
+        // ボタンの入れ物ごと消す
+        moreContainer.style.display = 'none';
     });
 }
