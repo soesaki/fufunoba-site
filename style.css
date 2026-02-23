@@ -79,10 +79,17 @@ p {
     right: 0;
 }
 
+.menu-logo {
+    text-align: left;     /* 中の要素を左に寄せる */
+    padding-left: 0;      /* 余計な余白があれば消す */
+}
+
+/* ロゴ画像の設定 */
 .menu-logo img {
-    width: 160px;
+    width: 140px;         /* お好みのサイズ（140〜160px程度） */
     height: auto;
-    display: block;
+    display: block;       /* ブロック要素にしてmarginを有効にする */
+    margin: 40px 0 20px 20px; /* 上40px, 右0, 下20px, 左20px */
 }
 
 .menu-list {
