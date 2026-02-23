@@ -91,7 +91,7 @@ p {
     height: auto;
     display: block;
     /* marginの auto を完全に消して、数値で指定します */
-    margin: 40px 0 20px -5px; 
+    margin: 40px 0 20px 0; 
 }
 
 .menu-list {
