@@ -437,6 +437,18 @@ main.gallery .gallery-banner p {
         border-radius: 4px;            /* 小さくなるので角丸も少し控えめに */
     }
 
+   .gallery-image.is-hidden {
+        display: none; /* スマホの時は隠す */
+    }
+    /* ボタンの見た目（既存の .btn クラスを活かしつつ微調整） */
+    .more-btn-container {
+        margin: 20px 0 40px;
+    }
+    #moreBtn {
+        background-color: #666; /* 少し控えめなグレーにするなど */
+        padding: 10px 40px;
+    }
+
     /* タイトルなどの調整 */
     .gallery h1 {
         font-size: 24px;
@@ -451,5 +463,12 @@ main.gallery .gallery-banner p {
     .btn {
         font-size: 16px;
         padding: 12px 25px;
+    }
+}
+
+/* PCでは hidden クラスが付いていても表示させる */
+@media (min-width: 601px) {
+    .more-btn-container {
+        display: none; /* PCではボタン自体を隠す */
     }
 }
