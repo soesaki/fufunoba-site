@@ -468,7 +468,10 @@ main.gallery .gallery-banner p {
 
 /* PCでは hidden クラスが付いていても表示させる */
 @media (min-width: 601px) {
+    .gallery-image.is-hidden {
+        display: block !important; /* これを追加してPCでは全部見せます */
+    }
     .more-btn-container {
-        display: none; /* PCではボタン自体を隠す */
+        display: none;
     }
 }
